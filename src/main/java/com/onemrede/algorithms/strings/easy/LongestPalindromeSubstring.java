@@ -2,11 +2,11 @@ package com.onemrede.algorithms.strings.easy;
 
 public class LongestPalindromeSubstring {
     public static void main(String[] args) {
-        System.out.println(longestPalidrome("abaxyzzyxf"));
+        System.out.println(longestPalindrome("abaxyzzyxf"));
     }
     //input abaxyzzyxf
     //output xyzzyx
-    public static String longestPalidrome(String str) {
+    public static String longestPalindrome(String str) {
         int[] currentLongest = {0, 1};
         for (int i=0;i<str.length();i++) {
             int[] odd = getLongestPalindromeFrom(str, i-1, i+1);
