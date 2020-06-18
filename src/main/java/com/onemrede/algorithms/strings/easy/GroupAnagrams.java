@@ -19,7 +19,7 @@ public class GroupAnagrams {
                 anagrams.get(sortedWord).add(word);
             }
             else {
-                anagrams.put(sortedWord, new ArrayList<String>(Collections.singletonList(word)));
+                anagrams.put(sortedWord, new ArrayList<String>(Arrays.asList(word)));
             }
         }
         return new ArrayList<List<String>>(anagrams.values());
